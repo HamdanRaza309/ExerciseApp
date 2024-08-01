@@ -8,6 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Services from './components/Services';
 import Blog from './components/Blog';
+import SpecificExercises from './components/SpecificExercises';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/specificExercises" element={<SpecificExercises />} />
+
       </Routes>
     </BrowserRouter>
   );

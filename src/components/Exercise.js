@@ -31,7 +31,18 @@ export default function Exercise() {
 
     return (
         <>
-            <h1>Exercises</h1>
+            <div className="w-full h-[80vh] bg-gradient-to-r from-[#f7c399] to-[#ffc061] flex items-center justify-center text-center text-white relative overflow-hidden">
+                <div className="absolute inset-0 opacity-20">
+                    <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#ffffff" fillOpacity="0.3" d="M0,128L1440,256L0,320Z"></path>
+                    </svg>
+                </div>
+                <div className="relative p-6 max-w-4xl">
+                    <blockquote className="text-3xl md:text-4xl font-bold italic">
+                        "Fitness is not just about building a strong body, but also about fostering a resilient mind and a healthier lifestyle."
+                    </blockquote>
+                </div>
+            </div>
             <div>
                 {exercises.map((exercise) => {
                     return (
