@@ -2,10 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell, faRunning, faHeart, faStar, faAppleAlt } from '@fortawesome/free-solid-svg-icons';
-import image1 from '../talkingOnPhone.png';
-import image2 from '../logo.png';
-import image3 from '../Main.png';
-import image4 from '../talkingOnPhone.png';
+import Home1 from '../Home1.png';
+import Home2 from '../Home2.png';
+import Home3 from '../Home3.png';
+import Home4 from '../Home4.png';
+import Home5 from '../Home5.png';
+import Home6 from '../Home6.png';
+import Home7 from '../Home7.png';
+import Home8 from '../Home8.jpg';
+import Home9 from '../Home9.avif';
 import Footer from './Footer';
 import LetsTalk from './LetsTalk';
 
@@ -26,15 +31,15 @@ const Home = () => {
             <div className="flex justify-center items-start">
                 <div className="flex flex-col items-center">
                     <div className="flex">
-                        <img src={image1} alt="Gym Training" className="rounded shadow-md w-40 h-40 hover:transform hover:scale-110 duration-200" />
-                        <img src={image2} alt="Fitness Equipment" className="rounded shadow-md w-40 h-40 hover:transform hover:scale-110 duration-200" />
+                        <img src={Home1} alt="Gym Training" className="rounded shadow-md w-40 h-40 hover:transform hover:scale-110 duration-200" />
+                        <img src={Home2} alt="Fitness Equipment" className="rounded shadow-md w-40 h-40 hover:transform hover:scale-110 duration-200" />
                     </div>
                     <div>
-                        <img src={image3} alt="Group Fitness Class" className="rounded shadow-md w-80 h-40 hover:transform hover:scale-110 duration-200" />
+                        <img src={Home3} alt="Group Fitness Class" className="rounded shadow-md w-80 h-40 hover:transform hover:scale-110 duration-200" />
                     </div>
                 </div>
                 <div>
-                    <img src={image4} alt="Personal Trainer" className="rounded shadow-md w-80 max-h-80 hover:transform hover:scale-110 duration-200" />
+                    <img src={Home4} alt="Personal Trainer" className="rounded shadow-md w-80 max-h-80 hover:transform hover:scale-110 duration-200" />
                 </div>
             </div>
             <div className="text-center mt-20 bg-orange-100 w-full p-10 m-0 rounded-lg shadow-md">
@@ -69,7 +74,7 @@ const Home = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-center mt-20 w-full p-10 rounded-lg shadow-md bg-white">
-                <div className='flex-1 md:pr-8 text-center md:text-left'>
+                <div className=' flex-1 md:pr-8 text-center md:text-left p-20'>
                     <span className="bg-orange-500 text-white font-bold text-2xl px-4 py-2 mb-5 inline-block rounded-md">
                         Welcome to IronEdge
                     </span>
@@ -77,20 +82,20 @@ const Home = () => {
                         Fitness is Not Just a Routine, It's a Lifestyle
                     </h2>
                     <p className="text-gray-700 mb-6">
-                        At [Your Gym Name], we believe that fitness is not just about working out; it's a way of life. Our state-of-the-art facility, experienced trainers, and diverse range of classes ensure that we have something for everyone, whether you’re a beginner or a fitness enthusiast.
+                        At IronEdge, we believe that fitness is not just about working out; it's a way of life. Our state-of-the-art facility, experienced trainers, and diverse range of classes ensure that we have something for everyone, whether you’re a beginner or a fitness enthusiast.
                     </p>
                     <Link to='/about' className="text-orange-500 font-semibold hover:underline">
                         Learn More About Us
                     </Link>
                 </div>
-                <div className='flex-1 mt-6 md:mt-0'>
-                    <img src={image3} alt="Welcome to Our Gym" className="w-full h-auto rounded-lg shadow-lg" />
+                <div className='flex justify-around flex-1 mt-6 md:mt-0'>
+                    <img src={Home5} alt="Welcome to Our Gym" className="w-auto h-96" />
                 </div>
             </div>
 
             <div className="flex flex-col md:flex-row items-center mt-20 w-full p-10 rounded-lg shadow-md bg-white">
-                <div className='flex-1 md:flex-shrink-0'>
-                    <img src={image3} alt="Our Facilities" className="w-full h-auto rounded-lg shadow-lg" />
+                <div className='flex justify-around flex-1 md:flex-shrink-0'>
+                    <img src={Home6} alt="Our Facilities" className="w-auto h-96" />
                 </div>
                 <div className='flex-1 md:pl-8 text-center md:text-left'>
                     <span className="bg-orange-500 text-white font-bold text-2xl px-4 py-2 mb-5 inline-block rounded-md">
@@ -118,7 +123,7 @@ const Home = () => {
                     <div className="bg-white p-6 border-2 border-gray-50 rounded-lg w-full max-w-xs hover:shadow-xl hover:transform hover:scale-110 duration-200">
                         <p className="text-gray-700 mb-4">"This gym has completely transformed my fitness routine! The trainers are experts, and the variety of classes keeps me motivated. I've gained strength and confidence in just a few weeks!"</p>
                         <div className="flex items-center">
-                            <img src={image2} alt="Client" className="w-16 h-16 rounded-full mr-4" />
+                            <img src={Home7} alt="Client" className="w-16 h-16 rounded-full mr-4" />
                             <div>
                                 <h2 className="font-semibold text-lg">Ahmed Khan</h2>
                                 <h3 className="text-gray-600">High-Intensity Exercise</h3>
@@ -128,9 +133,9 @@ const Home = () => {
                     <div className="bg-white p-6 border-2 border-gray-50 rounded-lg w-full max-w-xs hover:shadow-xl hover:transform hover:scale-110 duration-200">
                         <p className="text-gray-700 mb-4">"I’ve never enjoyed working out as much as I do here. The trainers are very encouraging, and the gym has top-notch equipment. I feel stronger and healthier every day!"</p>
                         <div className="flex items-center">
-                            <img src={image2} alt="Client" className="w-16 h-16 rounded-full mr-4" />
+                            <img src={Home8} alt="Client" className="w-16 h-16 rounded-full mr-4" />
                             <div>
-                                <h2 className="font-semibold text-lg">Fatima Ali</h2>
+                                <h2 className="font-semibold text-lg">Muhammad Ali</h2>
                                 <h3 className="text-gray-600">Yoga and Tai Chi</h3>
                             </div>
                         </div>
@@ -138,7 +143,7 @@ const Home = () => {
                     <div className="bg-white p-6 border-2 border-gray-50 rounded-lg w-full max-w-xs hover:shadow-xl hover:transform hover:scale-110 duration-200">
                         <p className="text-gray-700 mb-4">"This gym has exceeded my expectations! The fitness programs are tailored to my goals, and the atmosphere is incredibly motivating. I’m thrilled with my progress!"</p>
                         <div className="flex items-center">
-                            <img src={image2} alt="Client" className="w-16 h-16 rounded-full mr-4" />
+                            <img src={Home9} alt="Client" className="w-16 h-16 rounded-full mr-4" />
                             <div>
                                 <h2 className="font-semibold text-lg">Omar Hassan</h2>
                                 <h3 className="text-gray-600">Strength Training</h3>
