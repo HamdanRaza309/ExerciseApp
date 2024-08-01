@@ -7,7 +7,7 @@ export default function Navbar() {
         <nav className='bg-gradient-to-r from-orange-500 via-orange-100 to-white shadow-lg'>
             <div className='container mx-auto flex justify-between items-center px-6 py-4'>
                 {/* Logo */}
-                <img src={logo} alt="Logo" className="h-12 w-12 rounded-full border-2 border-orange-500" />
+                <img src={logo} alt="IronEdge Logo" className="h-12 w-12 rounded-full border-2 border-orange-500" />
 
                 {/* Navigation Links */}
                 <ul className='flex space-x-6 text-gray-800'>
