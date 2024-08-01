@@ -5,7 +5,6 @@ import Footer from './Footer';
 const Contact = () => {
     return (
         <div className="relative w-full">
-            {/* Quote Section */}
             <div className="w-full h-96 bg-orange-200 flex items-center justify-center text-center text-white rounded-b-lg">
                 <div className="p-4 md:p-6 max-w-2xl">
                     <blockquote className="text-xl md:text-3xl font-bold italic">

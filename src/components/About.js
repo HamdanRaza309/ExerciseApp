@@ -7,12 +7,11 @@ import Me from '../Me.jpg';
 import Me2 from '../Me2.jpg';
 import Me3 from '../Me3.png';
 import Footer from './Footer';
+import LetsTalk from './LetsTalk';
 
 export default function Home() {
     return (
         <div className="bg-gray-50">
-            {/* Hero Section */}
-            {/* <section className="relative bg-gradient-to-r from-white to-orange-500 h-screen flex items-center"> */}
             <section className="relative bg-orange-200 h-screen flex items-center">
                 <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12">
                     <div className="lg:w-1/2 text-center lg:text-left">
@@ -43,7 +42,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* New Section */}
             <section className="relative py-20 flex items-center">
                 <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12">
                     <div className="lg:w-1/2 relative flex justify-center">
@@ -84,8 +82,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Features Section */}
-            <section id="features" className="py-20 bg-gray-100">
+            <section id="services" className="py-20 bg-gray-100">
                 <div className="container mx-auto text-center px-6">
                     <h2 className="bg-orange-500 text-white px-2 py-1 inline-block rounded-md text-4xl font-bold mb-12">Our Features</h2>
                     <div className="flex flex-wrap justify-center">
@@ -107,11 +104,11 @@ export default function Home() {
                                 <p className="text-gray-700">Get nutrition plans to complement your workout routine.</p>
                             </div>
                         </div>
+                        <Link to='/services' className='text-orange-500 font-semibold hover:underline'>More Services</Link>
                     </div>
                 </div>
             </section>
 
-            {/* Trainers Section */}
             <section id="trainers" className="py-20 bg-orange-50">
                 <div className="container mx-auto text-center px-6">
                     <h2 className="bg-orange-500 text-white px-2 py-1 inline-block rounded-md text-4xl font-bold mb-12">Meet Our Trainers</h2>
@@ -140,7 +137,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
+            <LetsTalk />
             <Footer />
         </div>
     );

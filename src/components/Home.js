@@ -7,6 +7,7 @@ import image2 from '../logo.png';
 import image3 from '../Main.png';
 import image4 from '../talkingOnPhone.png';
 import Footer from './Footer';
+import LetsTalk from './LetsTalk';
 
 const Home = () => {
     return (
@@ -147,6 +148,7 @@ const Home = () => {
                 </div>
             </div>
 
+            <LetsTalk />
             <Footer />
         </div>
     );
