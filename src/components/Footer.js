@@ -19,8 +19,9 @@ export default function Footer() {
                     <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 mb-6 md:mb-0">
                         <Link to="/" className="text-white hover:text-orange-500">Home</Link>
                         <Link to="/about" className="text-white hover:text-orange-500">About Us</Link>
-                        {/* <Link to="/services" className="text-white hover:text-orange-500">Services</Link>
-                        <Link to="/trainers" className="text-white hover:text-orange-500">Trainers</Link> */}
+                        <Link to="/services" className="text-white hover:text-orange-500">Services</Link>
+                        <Link to="/specificExercises" className="text-white hover:text-orange-500">Exercises</Link>
+                        <Link to="/blog" className="text-white hover:text-orange-500">Blog</Link>
                         <Link to="/contact" className="text-white hover:text-orange-500">Contact</Link>
                     </div>
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../logo.png';
+import logo from '../assets/images/logo/L2.png'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +45,7 @@ export default function Navbar() {
                     </li>
                     <li className='relative group'>
                         <Link to='/specificExercises' className='text-lg font-semibold hover:text-orange-600 transition-colors duration-300'>
-                            Specific Exercises
+                            Exercises
                         </Link>
                         <span className='absolute bottom-0 left-0 w-full h-0.5 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300'></span>
                     </li>

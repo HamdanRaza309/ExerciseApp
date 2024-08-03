@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import About1 from '../About1.png';
-import About2 from '../About2.png';
-import About3 from '../About3.png';
-import About4 from '../About4.png';
-import About5 from '../About5.png';
+import About1 from '../assets/images/about/About1.png';
+import About2 from '../assets/images/about/About2.png';
+import About3 from '../assets/images/about/About3.png';
+import About4 from '../assets/images/about/About4.png';
+import About5 from '../assets/images/about/About5.png';
 import Footer from './Footer';
 import LetsTalk from './LetsTalk';
 

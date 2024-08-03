@@ -62,7 +62,7 @@ const SpecificExercises = () => {
     };
 
     return (
-        <div className="p-6 bg-gray-100 min-h-screen">
+        <div className="p-6 bg-gray-100 min-h-screen w-full">
             <h2 className="text-2xl font-bold text-orange-500 mb-4 text-center md:text-left">Enter Body Part Name to get Exercises</h2>
             <form onSubmit={handleOnSubmit} className="mb-6">
                 <div className="relative mb-4">
