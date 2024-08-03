@@ -49,8 +49,8 @@ export default function About() {
                         <p className="text-lg text-gray-600 mb-8">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
                         </p>
-                        <Link to="/contact" className="bg-gray-800 text-white font-bold py-2 px-6 rounded-full transition duration-300 hover:bg-gray-900">
-                            Contact Us
+                        <Link to="/blog" className="bg-gray-800 text-white font-bold py-2 px-6 rounded-full transition duration-300 hover:bg-gray-900">
+                            Blogs
                         </Link>
                     </div>
                 </div>

@@ -27,6 +27,9 @@ const Home = () => {
                 <p className="text-lg text-gray-600 w-full max-w-xl mx-auto mb-10">
                     We are a premier fitness center specializing in personalized training, state-of-the-art equipment, and holistic wellness. Let’s achieve your fitness goals together.
                 </p>
+                <Link to="/specificExercises" className="bg-gray-800 text-white font-bold py-2 px-6 rounded-full transition duration-300 hover:bg-gray-900">
+                    Exercises
+                </Link>
             </header>
             <div className="flex justify-center items-start">
                 <div className="flex flex-col items-center">

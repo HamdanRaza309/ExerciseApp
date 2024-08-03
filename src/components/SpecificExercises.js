@@ -58,12 +58,30 @@ const SpecificExercises = () => {
     };
 
     const handleOnChange = (e) => {
-        setBodyPart(e.target.value);
+        let value = e.target.value;
+        if (value.length > 0 && value[0] === value[0].toUpperCase()) {
+            value = value[0].toLowerCase() + value.slice(1);
+        }
+        setBodyPart(value);
     };
+
 
     return (
         <div className="p-6 bg-gray-100 min-h-screen w-full">
             <h2 className="text-2xl font-bold text-orange-500 mb-4 text-center md:text-left">Enter Body Part Name to get Exercises</h2>
+            <div className="flex">
+                <small className='font-bold text-orange-500 mb-4 text-center md:text-left'>Includes Exercises for: </small>
+                <small className='mx-1'>Back,</small>
+                <small className='mx-1'>Chest,</small>
+                <small className='mx-1'>Cardio,</small>
+                <small className='mx-1'>Lower Arms,</small>
+                <small className='mx-1'>Lower Legs,</small>
+                <small className='mx-1'>Neck,</small>
+                <small className='mx-1'>Shoulders,</small>
+                <small className='mx-1'>Upper Arms,</small>
+                <small className='mx-1'>Upper Legs,</small>
+                <small className='mx-1'>Waist</small>
+            </div>
             <form onSubmit={handleOnSubmit} className="mb-6">
                 <div className="relative mb-4">
                     <input

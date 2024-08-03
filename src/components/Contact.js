@@ -13,7 +13,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="max-w-4xl mx-auto p-8 bg-white shadow-lg rounded-lg">
+            <div className="max-w-4xl mx-auto p-8 bg-white shadow-lg rounded-lg my-5">
                 <span className="bg-orange-500 text-3xl text-white text-center px-2 py-1 inline-block rounded-md p-5 m-5">Get in Touch with Us</span>
                 <div className="mb-10">
                     <h2 className="text-xl font-semibold mb-4">We’d Love to Hear from You!</h2>

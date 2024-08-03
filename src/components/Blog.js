@@ -1,6 +1,7 @@
 import React from 'react';
 import LetsTalk from './LetsTalk';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
     const blogs = [
@@ -106,9 +107,36 @@ const Blog = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center bg-pink-50 p-8">
-            <span className="bg-orange-500 text-5xl font-bold text-center text-white w-auto mb-12 px-2 py-3 inline-block rounded-md">Checkout Our Blog</span>
+        <div className="flex flex-col items-center bg-pink-50 w-full">
+
+
+            <section className="w-full h-[80vh] bg-gradient-to-r from-[#f7c399] to-[#ffc061] flex items-center justify-center text-center text-white overflow-hidden shadow-lg relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-[#f7c399] to-[#ffc061] opacity-60"></div>
+                <div className="container mx-auto text-center relative z-10">
+                    <h1 className="text-4xl font-bold mb-4 leading-tight">
+                        Welcome to Our Blog
+                    </h1>
+                    <p className="text-lg  mb-16 leading-relaxed">
+                        Discover the latest news, tips, and insights from our experts. Stay updated with our articles on various topics, from health and wellness to industry trends and personal development.
+                    </p>
+                    <Link to="/about" className="bg-gray-800 text-white font-bold py-2 px-6 rounded-full mr-4 transition duration-300 hover:bg-gray-900">
+                        About Us
+                    </Link>
+                    <p className="mt-6 text-sm italic my-5">
+                        Don't miss out on our latest updates and exclusive content. Sign up for our newsletter for regular updates!
+                    </p>
+                </div>
+            </section>
+
+
+            <div className="container mx-auto text-center my-10">
+                <h2 className="bg-orange-500 text-5xl font-bold text-center text-white w-auto mb-12 px-2 py-3 inline-block rounded-md">Featured Posts</h2>
+                <p className="text-lg mb-6">
+                    Check out our top articles of the month. These are must-reads!
+                </p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+
                 {blogs.map((blog, index) => (
                     <div key={index} className="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">
                         <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover rounded-t-lg" />
