@@ -40,3 +40,14 @@ body {
     transform: rotate(360deg);
   }
 }
+
+/* Example: Adjusting styles for tablets */
+@media (max-width: 768px) {
+  .container {
+      padding: 1rem;
+  }
+  .header {
+      font-size: 1.5rem;
+  }
+}
+
